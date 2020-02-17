@@ -1,0 +1,19 @@
+<h1>Olá Home</h1>
+
+The request URL is {{ request.url() }}
+
+<br>
+
+{{ Helpers.appRoot() }}
+
+<img src="{{ assetsUrl('resources/images/teste.png') }}" />
+
+<br>
+
+<a href="{{ route('UserController.show', { id: 1 }) }}">
+  View profile
+</a>
+
+<br>
+
+{{ auth.user }}
